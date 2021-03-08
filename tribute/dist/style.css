@@ -1,0 +1,61 @@
+html{
+  font-size: 10px;
+  font-family: Arial;
+  background-color: #D8D8D8;
+}
+.ul-customize {
+  font-size: 1.5rem;
+}
+#main{
+  background-color: #D8D8D8;
+  text-align:center;
+}
+#title {
+  padding: 20px;
+  text-align:center;
+  font-size: 4rem;
+}
+#title-cap {
+  font-size: 1.5rem;
+}
+#img-div {
+  background-color: white;
+  padding: 10px;
+  margin: 20px;
+}
+img {
+height: auto;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+#img-caption {
+  padding:20px;
+  font-size: 1.5rem;
+}
+#quote1 {
+  padding:20px;
+  max-width:550px;
+  margin: auto auto;
+  font-size: 1.5rem;
+  text-align:left;
+}
+#quote2 {
+  padding:10px;
+  max-width:550px;
+  margin: auto auto;
+  text-align:left;
+  font-size: 1.5rem;
+}
+#url-header {
+  padding: 50px;
+}
+
+ul{
+  max-width:550px;
+  padding:20px;
+  margin: auto auto;
+  text-align: left;
+  display: auto;
+}
