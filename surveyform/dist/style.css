@@ -1,0 +1,61 @@
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  text-align:center;
+  font-size: 1.75rem;
+  color:white;
+  background-image:linear-gradient(rgba(102, 51, 153, 0.5),rgba(102, 51, 153, 0.5)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+
+}
+form {
+  font-family: 'Roboto', sans-serif;
+  border-radius:5px;
+  text-align:left;
+  background-color: #191966;
+  opacity: 0.9;
+  color:white;
+  width:800px;
+  height:auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  padding:30px;
+}
+
+.inputstyle {
+  border-radius: 5px;
+  width: 790px;
+  height:40px;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.75rem;
+  margin-top:10px;
+}
+
+#finalwords {
+  width: 790px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.75rem;
+  height: 100px;
+  margin-top: 10px
+}
+
+#submit {
+  border-radius: 5px;
+  width: 799px;
+  height:50px;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.75rem;
+  margin-top:10px;
+  border-color: #00cc00;
+  background-color:#00cc00;
+  color: white;
+}
+div {
+}
+.otherinputs {
+  margin-top:15px
+}
