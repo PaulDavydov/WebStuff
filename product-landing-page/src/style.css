@@ -1,0 +1,55 @@
+html{
+  font-size:10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+img {
+  width: 200px;
+  margin-right:100px;
+  padding: 14px 16px;
+  border-color:white;
+}
+a {
+  float:right;
+  padding:10px;
+  text-decoration:none;
+  font-size:1.5rem;
+}
+#email{
+  margin-top: 100px;
+  width:400px;
+}
+#wrapper ul {
+    padding: 0;
+    margin: auto;
+    width: 80%;
+    list-style-type: none;
+}
+
+#wrapper ul li {
+    padding: 30px;
+    margin-bottom: 20px;
+    display: table;
+    width: 100%;
+}
+#wrapper ul li img {
+    float: left;
+}
+#wrapper ul li .details {
+  font-size:1.5rem;
+  margin-top:50px;
+  margin-left:50px;
+
+  width: 75%;
+}
+#flex-con {
+  align-items: center;
+}
+.flex-container {
+  display: flex;
+  align-items:center;
+  flex-direction: row;
+  border-color: black;
+  flex: 1 200px;
+}
+
+
