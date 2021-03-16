@@ -1,52 +1,95 @@
-<br><header id="header">
-  <img src="https://static.wikia.nocookie.net/roblox-tdcu/images/2/22/Lexcorp_logo.png">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header id="header">
+  <section>
+  <img id="header-img" src="https://www.afake.com/images/afake_logo.png" alt="company logo">
    <nav id="nav-bar">
-    <a class="nav-link" href="#features">Features</a>
-    <a class="nav-link" href="how-it-works">How It Works</a>
-    <a class="nav-link" href="pricing">Pricing</a>
+    <a class="nav-link" href="#middle">Features</a>
+    <a class="nav-link" href="#video">How It Works</a>
+    <a class="nav-link" href="#flex-con">Pricing</a>
   </nav>
+  </section>
 </header><br>
 
-<form id="form">
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
   <h1 id="form-title">Buy Batman's gear for cheap! Quality guaranteed!</h1>
-  <input id="email" type="email" placeholder="Enter your email address"> <br>
-  <input type="submit" value="Submit"><br>
-  
+  <input id="email" name="email" type="email" placeholder="Enter your email address..." required> <br>
+  <input id="submit" type="submit" value="GET STARTED" >
+</form>
+
+<form id="middle">
   <div id="wrapper">
     <section>
       <ul id="a">
         <li>
-          <img id="img1" src="https://static.wikia.nocookie.net/logopedia/images/2/20/Batman-Logo-1946.png">
-          <div class="details"
-             <p>cool stuff</p>
+          <img class="body-img" src="https://static.wikia.nocookie.net/logopedia/images/2/20/Batman-Logo-1946.png" alt="batman logo">
+          <div class="details">
+            <h2>Authentic Items</h2>
+            <p>Our items are authentically made and previously owned by Batman.</p>
           </div>
         </li>
         <li>
-          <img id="img1" src="https://static.wikia.nocookie.net/logopedia/images/2/20/Batman-Logo-1946.png">
-          <div class="details"
-             <p>cool stuff</p>
+          <img class="body-img" src="https://www.allfree-clipart.com/upload/2017/11/27/20171127233624-d353aa1b.png" alt="delivery truck image">
+          <div class="details">
+            <h2>Fast Shipping</h2>
+            <p>We make sure you receive the items as soon as we have acquired them or when you put in your order. Returns are free if you find yourself not satisfied with your purchase.</p>
           </div>
         </li>
         <li>
-          <img id="img1" src="https://static.wikia.nocookie.net/logopedia/images/2/20/Batman-Logo-1946.png">
-          <div class="details"
-             <p>cool stuff</p>
+          <img class="body-img" src="https://cdn3.iconfinder.com/data/icons/black-solid-labels-2/128/quality_guarantee_label_guaranteed-512.png" alt="quality picture">
+          <div class="details">
+            <h2>Quality Guaranteed</h2>
+            <p>For every item, we check for any damages or malfunctions. We promise a undamaged item with a 1 year warranty.</p>
           </div>
         </li>
       </ul>
     </section>
   </div>
   <section>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/rDuetklFtDQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div id="flex-con"class="flex-container">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/rDuetklFtDQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="flex-con" class="flex-container">
+      <div class="item">
+        <section><h3>Batman Utility Belt Package</h3></section>
+        <h4>$400</h4>
+        <ul>
+          <li>Bat Bombs</li>
+          <li>Rebreather</li>
+          <li>Communications Devices</li>
+          <li>Batarangs</li>
+        </ul>
+        <button>SELECT</button>
+      </div>
+      <div class="item">
+        <section><h3>Batman Loadout Package</h3></section>
+        <h4>$800</h4>
+        <ul >
+          <li>Everything in the previous package</li>
+          <li>Batsuit</li>
+          <li>Body Armor</li>
+          <li>Batmobile</li>
+        </ul>
+        <button>SELECT</button>
+      </div>
+      <div class="item">
+        <section><h3>Full Batman Experience</h3></section>
+        <h4>$2000</h4>
+        <ul >
+          <li>Everything in the previous two packages</li>
+          <li>Batcave</li>
+          <li>Batman Personal Computers</li>
+          <li>Customizable Bat Signal</li>
+        </ul>
+        <button>SELECT</button>
+      </div>
     </div>
   </section>
+</form> <br>
 
-  
-  
-  
-  
-</form>
+<footer>
+  <nav>
+    <a href="privacy"> Privacy</a>
+    <a href="terms">Terms</a>
+    <a href="contact"> Contact</a>
+  </nav>
+  <p>Copyright information 2021, artek</p>
+</footer>
