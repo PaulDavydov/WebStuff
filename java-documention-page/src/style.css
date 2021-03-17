@@ -1,0 +1,25 @@
+#navbar {
+  width:200px;
+  position:fixed;
+}
+#navbar a {
+  background-color:#eee;
+  color:black;
+  display:block;
+  padding:12px;
+  text-decoration:none;
+}
+#navbar a:hover{
+  background-color:#ccc;
+}
+#navbar a.active {
+  background-color:#4CAF50;
+  color:white;
+}
+main {
+  margin-left:auto;
+  max-width:1000px;
+}
+table, th,td {
+  border: 1px solid black;
+}
