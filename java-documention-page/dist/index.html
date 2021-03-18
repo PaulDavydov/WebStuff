@@ -8,33 +8,34 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <nav id="navbar">
   <header> JAVA Documentation</header>
-  <a href="#Introduction">Introduction</a>
-  <a href="#Object">Object</a>
-  <a href="#Class">Class</a>
-  <a href="#Inheritance">Inheritance</a>
-  <a href="#Interface">Interface</a>
-  <a href="#Variables">Variables</a>
-  <a href="#Operators">Operators</a>
-  <a href="#Reference">Reference</a>
+  <a class="nav-link" href="#Introduction">Introduction</a>
+  <a class="nav-link" href="#Object">Object</a>
+  <a class="nav-link" href="#Class">Class</a>
+  <a class="nav-link" href="#Inheritance">Inheritance</a>
+  <a class="nav-link" href="#Interface">Interface</a>
+  <a class="nav-link" href="#Variables">Variables</a>
+  <a class="nav-link" href="#Operators">Operators</a>
+  <a class="nav-link" href="#Reference">Reference</a>
 </nav>
 
 <main id="main-doc">
   <section id="Introduction" class="main-section">
-    <h1>Introduction</h1>
+    <header>Introduction</header>
     <p>The general-purpose, high-level Java programming language is a powerful software platform. Every full implementation of the Java platform gives you the following features</P>
     <ul>
-      <li>Development Tools: The development tools provide everything you'll need for compiling, running, monitoring, debugging, and documenting your applications. As a new developer, the main tools you'll be using are the javac compiler, the java launcher, and the javadoc documentation tool.</li>
-      <li>Application Programming Interface (API): The API provides the core functionality of the Java programming language. It offers a wide array of useful classes ready for use in your own applications. It spans everything from basic objects, to networking and security, to XML generation and database access, and more. The core API is very large; to get an overview of what it contains, consult the Java Platform Standard Edition 8 Documentation.</li>
-      <li>Deployment Technologies: The JDK software provides standard mechanisms such as the Java Web Start software and Java Plug-In software for deploying your applications to end users.</li>
-      <li>User Interface Toolkits: The JavaFX, Swing, and Java 2D toolkits make it possible to create sophisticated Graphical User Interfaces (GUIs).</li>
-      <li>Integration Libraries: Integration libraries such as the Java IDL API, JDBC API, Java Naming and Directory Interface (JNDI) API, Java RMI, and Java Remote Method Invocation over Internet Inter-ORB Protocol Technology (Java RMI-IIOP Technology) enable database access and manipulation of remote objects.</li>
+      <li><strong>Development Tools</strong>: The development tools provide everything you'll need for compiling, running, monitoring, debugging, and documenting your applications. As a new developer, the main tools you'll be using are the javac compiler, the java launcher, and the javadoc documentation tool.</li>
+      <li><strong>Application Programming Interface (API)</strong>: The API provides the core functionality of the Java programming language. It offers a wide array of useful classes ready for use in your own applications. It spans everything from basic objects, to networking and security, to XML generation and database access, and more. The core API is very large; to get an overview of what it contains, consult the Java Platform Standard Edition 8 Documentation.</li>
+      <li><strong>Deployment Technologies</strong>: The JDK software provides standard mechanisms such as the Java Web Start software and Java Plug-In software for deploying your applications to end users.</li>
+      <li><strong>User Interface Toolkits</strong>: The JavaFX, Swing, and Java 2D toolkits make it possible to create sophisticated Graphical User Interfaces (GUIs).</li>
+      <li><strong>Integration Libraries</strong>: Integration libraries such as the Java IDL API, JDBC API, Java Naming and Directory Interface (JNDI) API, Java RMI, and Java Remote Method Invocation over Internet Inter-ORB Protocol Technology (Java RMI-IIOP Technology) enable database access and manipulation of remote objects.</li>
     </ul> 
   </section>
   
   <section id="Object" class="main-section">
-    <h1>Object</h1>
+    <header>Object</header>
     <p>Objects are key to understanding object-oriented technology. Look around right now and you'll find many examples of real-world objects: your dog, your desk, your television set, your bicycle.</p>
     <p>Real-world objects share two characteristics: They all have state and behavior. Dogs have state (name, color, breed, hungry) and behavior (barking, fetching, wagging tail). Bicycles also have state (current gear, current pedal cadence, current speed) and behavior (changing gear, changing pedal cadence, applying brakes). Identifying the state and behavior for real-world objects is a great way to begin thinking in terms of object-oriented programming.</p>
     <p>Take a minute right now to observe the real-world objects that are in your immediate area. For each object that you see, ask yourself two questions: "What possible states can this object be in?" and "What possible behavior can this object perform?". Make sure to write down your observations. As you do, you'll notice that real-world objects vary in complexity; your desktop lamp may have only two possible states (on and off) and two possible behaviors (turn on, turn off), but your desktop radio might have additional states (on, off, current volume, current station) and behavior (turn on, turn off, increase volume, decrease volume, seek, scan, and tune). You may also notice that some objects, in turn, will also contain other objects. These real-world observations all translate into the world of object-oriented programming.</p>
@@ -45,15 +46,15 @@
     <p>By attributing state (current speed, current pedal cadence, and current gear) and providing methods for changing that state, the object remains in control of how the outside world is allowed to use it. For example, if the bicycle only has 6 gears, a method to change gears could reject any value that is less than 1 or greater than 6.</p>
     <p>Bundling code into individual software objects provides a number of benefits, including:</p>
     <ol>
-      <li>Modularity: The source code for an object can be written and maintained independently of the source code for other objects. Once created, an object can be easily passed around inside the system.</li>
-      <li>Information-hiding: By interacting only with an object's methods, the details of its internal implementation remain hidden from the outside world.</li>
-      <li>Code re-use: If an object already exists (perhaps written by another software developer), you can use that object in your program. This allows specialists to implement/test/debug complex, task-specific objects, which you can then trust to run in your own code.</li>
-      <li>Pluggability and debugging ease: If a particular object turns out to be problematic, you can simply remove it from your application and plug in a different object as its replacement. This is analogous to fixing mechanical problems in the real world. If a bolt breaks, you replace it, not the entire machine.</li>
+      <li><strong>Modularity</strong>: The source code for an object can be written and maintained independently of the source code for other objects. Once created, an object can be easily passed around inside the system.</li>
+      <li><strong>Information-hiding</strong>: By interacting only with an object's methods, the details of its internal implementation remain hidden from the outside world.</li>
+      <li><strong>Code re-use</strong>: If an object already exists (perhaps written by another software developer), you can use that object in your program. This allows specialists to implement/test/debug complex, task-specific objects, which you can then trust to run in your own code.</li>
+      <li><strong>Pluggability and debugging ease</strong>: If a particular object turns out to be problematic, you can simply remove it from your application and plug in a different object as its replacement. This is analogous to fixing mechanical problems in the real world. If a bolt breaks, you replace it, not the entire machine.</li>
     </ol>
   </section>
   
   <section id="Class" class="main-section">
-    <h1>Class</h1>
+    <header>Class</header>
     <p>In the real world, you'll often find many individual objects all of the same kind. There may be thousands of other bicycles in existence, all of the same make and model. Each bicycle was built from the same set of blueprints and therefore contains the same components. In object-oriented terms, we say that your bicycle is an instance of the class of objects known as bicycles. A class is the blueprint from which individual objects are created.</p>
     <p>The following <code>Bicycle</code> class is one possible implementation of a bicycle:</p>
     <pre>
@@ -129,7 +130,7 @@
   </section>
   
   <section id="Inheritance"class="main-section">
-    <h1>Inheritance</h1>
+    <header>Inheritance</header>
     <p>Different kinds of objects often have a certain amount in common with each other. Mountain bikes, road bikes, and tandem bikes, for example, all share the characteristics of bicycles (current speed, current pedal cadence, current gear). Yet each also defines additional features that make them different: tandem bicycles have two seats and two sets of handlebars; road bikes have drop handlebars; some mountain bikes have an additional chain ring, giving them a lower gear ratio.</p>
     <p>Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. In this example, <code>Bicycle</code> now becomes the superclass of <code>MountainBike</code>, <code>RoadBike</code>, and <code>TandemBike</code>. In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses:</p>
     <img src="https://docs.oracle.com/javase/tutorial/figures/java/concepts-bikeHierarchy.gif">
@@ -148,7 +149,7 @@
   </section>
   
   <section id="Interface" class="main-section">
-    <h1>Interface</h1>
+    <header>Interface</header>
     <p>As you've already learned, objects define their interaction with the outside world through the methods that they expose. Methods form the object's interface with the outside world; the buttons on the front of your television set, for example, are the interface between you and the electrical wiring on the other side of its plastic casing. You press the "power" button to turn the television on and off.</p>
     <p>In its most common form, an interface is a group of related methods with empty bodies. A bicycle's behavior, if specified as an interface, might appear as follows:</p>
     <pre>
@@ -209,13 +210,13 @@
   </section>
   
   <section id="Variables" class="main-section">
-    <h1>Variables</h1>
+    <header>Variables</header>
     <p>The Java programming language defines the following kinds of variables:</p>
     <ul>
-      <li>Instance Variables (Non-Static Fields) Technically speaking, objects store their individual states in "non-static fields", that is, fields declared without the static keyword. Non-static fields are also known as instance variables because their values are unique to each instance of a class (to each object, in other words); the currentSpeed of one bicycle is independent from the currentSpeed of another.</li>
-      <li>Class Variables (Static Fields) A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. A field defining the number of gears for a particular kind of bicycle could be marked as static since conceptually the same number of gears will apply to all instances. The code static int numGears = 6; would create such a static field. Additionally, the keyword final could be added to indicate that the number of gears will never change.</li>
-      <li>Local Variables Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field (for example, int count = 0;). There is no special keyword designating a variable as local; that determination comes entirely from the location in which the variable is declared — which is between the opening and closing braces of a method. As such, local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.</li>
-      <li>Parameters You've already seen examples of parameters, both in the Bicycle class and in the main method of the "Hello World!" application. Recall that the signature for the main method is public static void main(String[] args). Here, the args variable is the parameter to this method. The important thing to remember is that parameters are always classified as "variables" not "fields". This applies to other parameter-accepting constructs as well (such as constructors and exception handlers) that you'll learn about later in the tutorial.</li>
+      <li><strong>Instance Variables</strong> (Non-Static Fields) Technically speaking, objects store their individual states in "non-static fields", that is, fields declared without the static keyword. Non-static fields are also known as instance variables because their values are unique to each instance of a class (to each object, in other words); the currentSpeed of one bicycle is independent from the currentSpeed of another.</li>
+      <li><strong>Class Variables</strong> (Static Fields) A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. A field defining the number of gears for a particular kind of bicycle could be marked as static since conceptually the same number of gears will apply to all instances. The code static int numGears = 6; would create such a static field. Additionally, the keyword final could be added to indicate that the number of gears will never change.</li>
+      <li><strong>Local Variables</strong> Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field (for example, int count = 0;). There is no special keyword designating a variable as local; that determination comes entirely from the location in which the variable is declared — which is between the opening and closing braces of a method. As such, local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.</li>
+      <li><strong>Parameters</strong> You've already seen examples of parameters, both in the Bicycle class and in the main method of the "Hello World!" application. Recall that the signature for the main method is public static void main(String[] args). Here, the args variable is the parameter to this method. The important thing to remember is that parameters are always classified as "variables" not "fields". This applies to other parameter-accepting constructs as well (such as constructors and exception handlers) that you'll learn about later in the tutorial.</li>
     </ul>
     <p>Every programming language has its own set of rules and conventions for the kinds of names that you're allowed to use, and the Java programming language is no different. The rules and conventions for naming your variables can be summarized as follows:</p>
     <ul>
@@ -226,13 +227,10 @@
   </section>
 
   <section id="Operators" class="main-section">
-    <h1>Operators</h1>
+    <header>Operators</header>
     <p>Operators are special symbols that perform specific operations on one, two, or three operands, and then return a result.</p>
     <p>As we explore the operators of the Java programming language, it may be helpful for you to know ahead of time which operators have the highest precedence. The operators in the following table are listed according to precedence order. The closer to the top of the table an operator appears, the higher its precedence. Operators with higher precedence are evaluated before operators with relatively lower precedence. Operators on the same line have equal precedence. When operators of equal precedence appear in the same expression, a rule must govern which is evaluated first. All binary operators except for the assignment operators are evaluated from left to right; assignment operators are evaluated right to left.</p>
     <table>
-      <thead>
-        <th colspan="2">Operators</th>
-      </thead>
       <tbody>
         <tr>
           <th>Operators</th>
@@ -299,7 +297,7 @@
     <p>In general-purpose programming, certain operators tend to appear more frequently than others; for example, the assignment operator "=" is far more common than the unsigned right shift operator ">>>". With that in mind, the following discussion focuses first on the operators that you're most likely to use on a regular basis, and ends focusing on those that are less common. Each discussion is accompanied by sample code that you can compile and run. Studying its output will help reinforce what you've just learned.</p>
   </section>
   <section id="Reference" class="main-section">
-    <h1>Reference</h1>
+    <header>Reference</header>
     <ul>
       <li>All the documentation in this page is taken from <a id="source" href="https://docs.oracle.com/javase/tutorial/index.html">Oracle's Java Tutorials</a></li>
     </ul>
