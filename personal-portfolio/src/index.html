@@ -1,76 +1,69 @@
 <body>
-  <header id="header">
-    <nav id="navbar">
-      <div id="left-part">
-        <a href="#welcome-section">Paul Davydov</a>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <a class="navbar-brand" href="#">Paul Davydov</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">About Me <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Projects</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
       </div>
-      <div id="right-part">
-        <a href="#about">About</a>
-        <a href=#projects>Work</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <main>
     <div id="welcome-section">
       <h1>Hi, I am Paul</h1>
-      
     </div>
+
     <div id="about">
       <h1>About Me</h1>
       <p>Currently developing my skills as a web developer in order to build functional websites. Also continuing to expand my knowledge of Java and learn more about the Spring Framework in order to develop restful services.</p>
       <p>When I am not working on projects, I enjoy playing competitive video games, such as Apex Legends, reading, and chatting/hanging out with my friends.</p>
       <p>Feel free to reach out to me if there are any questions!</p>
     </div>
+
     <div id="projects">
       <h1>Projects</h1>
-      <!---
-      <div class="parent">
-        <div class="div1">
-          
+      <div class="card-deck">
+        <div class="card card-color">
+          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/tribute-img.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card card-color">
+          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/survey-img.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card card-color">
+          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/prod-landing-img.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card card-color">
+          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/documentation-img.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
         </div>
       </div>
-  --->
-      <div id="container">
-   
-         <div id="con-projects">
-          <h2>Tribute Page</h2>
-          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/tribute-img.png">
-          <p>Simple Tribute page created for Dr. Norman Borlaug. Project was for the freeCodeCamp Responsive Web Design course. I recreated to the best of my ability their tribute page.
-        </div>
-        
-        <div id="con-projects">
-          <h2>freeCodeCamp Survey Form</h2>
-          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/survey-img.png">
-          <p>A Survey form created for the freeCodeCamp Responsive Web Design course. I tried to copy their own survey from to the best of my abilities.</p>
-        </div>
-      
-        <div id="con-projects">
-          <h2>Product Landing Page</h2>
-          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/prod-landing-img.png">
-          <p>A mock company website I created for the freeCodeCamp Responsive Web Design course. It is a little Batman theme'd and kind of a joke website. It is not really well designed and could use a quick lookover once again.</p>
-        </div>
-        <div id="con-projects">
-          <h2>Documentation Page</h2>
-          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/documentation-img.png">
-          <p>A documentation page created for the freeCodeCamp Responsive Web Design course. It contains information about Java and all information is referenced from the official Oracle's Java Documentation.</p>
-        </div>
 
-    
-      </div>
-      
     </div>
-    
-    <div id="contact">
-      <h1>Contact</h1>
-      <i id="github" class="fa fa-github fa-3x"></i>
-      <label for="github"> Github</label>
-      <i id="email" class="fa fa-envelope fa-3x"></i>
-      <label for="email">Email</label>
-      <i id="linkedin" class="fa fa-linkedin fa-3x"></i>
-      <label for="linkedin">Linkedin</label>
-    </div>
-    
+
   </main>
+
 </body>
