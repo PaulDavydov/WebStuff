@@ -1,69 +1,92 @@
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-    <a class="navbar-brand" href="#">Paul Davydov</a>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-fixed-top navbar-dark navbar-custom">
+    <a class="navbar-brand" href="#welcome-section">Paul Davydov</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">About Me <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Projects</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#projects">Projects</a>
+        <a class="nav-item nav-link" href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
   <main>
     <div id="welcome-section">
-      <h1>Hi, I am Paul</h1>
+      <div id="container">
+        <h1>Hi, I'm Paul!</h1>
+        <img id="profile-pic" src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/kegDNHqi_400x400.jpg" class="rounded-circle img-fluid mx-auto d-block">
+      </div>
     </div>
 
     <div id="about">
       <h1>About Me</h1>
       <p>Currently developing my skills as a web developer in order to build functional websites. Also continuing to expand my knowledge of Java and learn more about the Spring Framework in order to develop restful services.</p>
-      <p>When I am not working on projects, I enjoy playing competitive video games, such as Apex Legends, reading, and chatting/hanging out with my friends.</p>
+      <p>When I am not working on projects, I enjoy playing competitive video games, such as Apex Legends, reading, and chatting with my friends.</p>
       <p>Feel free to reach out to me if there are any questions!</p>
     </div>
 
     <div id="projects">
       <h1>Projects</h1>
-      <div class="card-deck">
-        <div class="card card-color">
-          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/tribute-img.png" class="card-img-top" alt="...">
+      <div class="card-deck project-tile">
+        <div id="card" class="card card-color">
+          <a href="https://codepen.io/pauldavydov/full/xxRyGQd" target="_blank"><img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/tribute-img.png" class="card-img-top img-fluid" alt="..."></a>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title"><span> / </span>Tribute Page<span> / </span></h5>
           </div>
         </div>
-        <div class="card card-color">
-          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/survey-img.png" class="card-img-top" alt="...">
+        <div id="card" class="card card-color">
+          <a href="https://codepen.io/pauldavydov/full/VwmEjEN" target="_blank"><img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/survey-img.png" class="card-img-top img-fluid" alt="..."></a>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title"><span> / </span>freeCodeCamp Survey Form<span> / </span></h5>
           </div>
         </div>
-        <div class="card card-color">
-          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/prod-landing-img.png" class="card-img-top" alt="...">
+        <div id="card" class="card card-color">
+          <a href="https://codepen.io/pauldavydov/full/jOVQLKa" target="_blank"><img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/prod-landing-img.png" class="card-img-top img-fluid" alt="..."></a>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title"><span> / </span>Product Landing Page<span> / </span></h5>
           </div>
         </div>
-        <div class="card card-color">
-          <img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/documentation-img.png" class="card-img-top" alt="...">
+        <div id="card" class="card card-color">
+          <a href="https://codepen.io/pauldavydov/full/qBqGWaY" target="_blank"><img src="https://raw.githubusercontent.com/PaulDavydov/WebStuff/main/personal-portfolio/images/documentation-img.png" class="card-img-top img-fluid" alt="..."></a>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title"><span> / </span>Documentation Page<span> /</span></h5>
           </div>
         </div>
       </div>
 
     </div>
 
+    <div id="contact">
+      <div id="cover">
+        <h1>Looking to collaborate or trying to get in touch?</h1>
+        <p><em>Use any of the links below to reach me.</em></p>
+      </div>
+      <div id="info">
+        <a id="profile-link" href="https://github.com/PaulDavydov" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+          <label for="profile-link"> Github</label>
+        </a>
+        <a href="mailto:pauldvyd@gmail.com">
+          <i id="email" class="fa fa-envelope fa-2x"></i>
+          <label for="email"> Email</label>
+        </a>
+        <a href="https://www.linkedin.com/in/paul-davydov-6a4857b5">
+          <i id="linkedin" class="fa fa-linkedin fa-2x"></i>
+          <label for="linkedin"> Linkedin</label>
+        </a>
+      </div>
+    </div>
+
   </main>
+
+  <footer class="text-center">
+    <div class="text-center p-3">
+      <p>Created by Paul Davydov</p>
+    </div>
+  </footer>
 
 </body>
